@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="{{asset('admin-lte/dist/css/adminlte.min.css')}}">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <!-- swal alert -->
+  <link rel="stylesheet" href="{{asset('css/swal.css')}}"/> 
 </head>
 <!--
 BODY TAG OPTIONS:
@@ -67,7 +69,7 @@ to get the desired effect
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <img src="{{asset('dist/img/user1-128x128.jpg')}}" alt="User Avatar" class="img-size-50 mr-3 img-circle">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   Brad Diesel
@@ -83,7 +85,7 @@ to get the desired effect
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <img src="{{asset('dist/img/user8-128x128.jpg')}}" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   John Pierce
@@ -99,7 +101,7 @@ to get the desired effect
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+            <img src="{{asset('dist/img/user3-128x128.jpg')}}" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   Nora Silvester
@@ -204,6 +206,15 @@ to get the desired effect
                 </a>
               </li>
             </ul>
+          </li>
+          <li class="nav-item has-treeview">       
+             <a href="{{route('message')}}" class="nav-link">
+              <i class="nav-icon fa fa-envelope-o"></i>
+              <p>
+                Message
+                <i class="fa fa-angle-left right"></i>
+              </p>
+            </a>
           </li>
           <li class="nav-item">
             <a href="pages/widgets.html" class="nav-link">
@@ -340,15 +351,8 @@ to get the desired effect
               </p>
             </a>
           </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fa fa-envelope-o"></i>
-              <p>
-                Mailbox
-                <i class="fa fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
+          
+            <!--<ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="pages/mailbox/mailbox.html" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
@@ -367,8 +371,8 @@ to get the desired effect
                   <p>Read</p>
                 </a>
               </li>
-            </ul>
-          </li>
+            </ul>-->
+         
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fa fa-book"></i>
@@ -536,5 +540,9 @@ to get the desired effect
 <script src="{{asset('admin-lte/plugins/chart.js/Chart.min.js')}}"></script>
 <script src="{{asset('admin-lte/dist/js/demo.js')}}"></script>
 <script src="{{asset('admin-lte/dist/js/pages/dashboard3.js')}}"></script>
+<script>
+@yield('javascript')
+</script>
+
 </body>
 </html>
