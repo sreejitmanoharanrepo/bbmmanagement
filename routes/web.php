@@ -19,6 +19,13 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/test', 'HomeController@test');
+
+///////messages links//////
 Route::get('/message', 'MessageController@index')->name('message');
 Route::get('/read/{id}', 'MessageController@read');
+
+
+///////listing links///////
+Route::get('/add_listing', 'ListingController@index')->name('add_listing');
+
 

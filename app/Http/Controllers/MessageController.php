@@ -41,10 +41,10 @@ class MessageController extends Controller
               <ErrorLanguage>en_US</ErrorLanguage>
               <WarningLevel>High</WarningLevel>
             <MailMessageType>AskSellerQuestion</MailMessageType>
-            <MessageStatus>Answered</MessageStatus>
+            <MessageStatus>Unanswered</MessageStatus>
                <!--Enter the Creation Start and End to filter the messages using this format
                    2016-03-21T05:21:58.878Z-->
-                   <StartCreationTime>2019-08-01T00:00:00.000Z</StartCreationTime>
+                   <StartCreationTime>2019-07-01T00:00:00.000Z</StartCreationTime>
           <EndCreationTime>2019-08-06T00:00:00.000Z</EndCreationTime>
           
             <Pagination>

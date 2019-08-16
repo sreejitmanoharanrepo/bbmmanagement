@@ -158,7 +158,7 @@ to get the desired effect
     <a href="index3.html" class="brand-link">
       <img src="{{asset('admin-lte/dist/img/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+      <span class="brand-text font-weight-light">BBM</span>
     </a>
 
     <!-- Sidebar -->
@@ -169,7 +169,7 @@ to get the desired effect
           <img src="{{asset('admin-lte/dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block">MAHI</a>
         </div>
       </div>
 
@@ -179,43 +179,78 @@ to get the desired effect
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
+            <a href="{{route('home')}}" class="nav-link active">
               <i class="nav-icon fa fa-dashboard"></i>
               <p>
                 Dashboard
                 <i class="right fa fa-angle-left"></i>
               </p>
             </a>
+            
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fa fa-pie-chart"></i>
+              <p>
+                Towstone
+                <i class="right fa fa-angle-left"></i>
+              </p>
+            </a>
             <ul class="nav nav-treeview">
+             <li class="nav-item has-treeview">       
+              <a href="{{route('message')}}" class="nav-link">
+                <i class="nav-icon fa fa-envelope-o"></i>
+                <p>
+                  Message                  
+                </p>
+              </a>
+             </li>
               <li class="nav-item">
-                <a href="./index.html" class="nav-link">
+                <a href="{{route('add_listing')}}" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Dashboard v1</p>
+                  <p>Add Listing</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./index2.html" class="nav-link">
+                <a href="" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Dashboard v2</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./index3.html" class="nav-link active">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Dashboard v3</p>
+                  <p>Performance</p>
                 </a>
               </li>
             </ul>
           </li>
-          <li class="nav-item has-treeview">       
-             <a href="{{route('message')}}" class="nav-link">
-              <i class="nav-icon fa fa-envelope-o"></i>
+           <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fa fa-pie-chart"></i>
               <p>
-                Message
-                <i class="fa fa-angle-left right"></i>
+                Newzales1991
+                <i class="right fa fa-angle-left"></i>
               </p>
             </a>
+            <ul class="nav nav-treeview">
+             <li class="nav-item has-treeview">       
+              <a href="{{route('message')}}" class="nav-link">
+                <i class="nav-icon fa fa-envelope-o"></i>
+                <p>
+                  Message                  
+                </p>
+              </a>
+             </li>
+              <li class="nav-item">
+                <a href="{{route('add_listing')}}" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Add Listing</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Performance</p>
+                </a>
+              </li>
+            </ul>
           </li>
+          
           <li class="nav-item">
             <a href="pages/widgets.html" class="nav-link">
               <i class="nav-icon fa fa-th"></i>
@@ -235,19 +270,19 @@ to get the desired effect
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="{{asset('pages/charts/chartjs.html')}}" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>ChartJS</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/flot.html" class="nav-link">
+                <a href="{{asset('pages/charts/flot.html')}}" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Flot</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/inline.html" class="nav-link">
+                <a href="{{asset('pages/charts/inline.html')}}" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Inline</p>
                 </a>
@@ -264,25 +299,25 @@ to get the desired effect
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/UI/general.html" class="nav-link">
+                <a href="{{asset('pages/UI/general.html')}}" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>General</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/UI/icons.html" class="nav-link">
+                <a href="{{asset('pages/UI/icons.html')}}" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Icons</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/UI/buttons.html" class="nav-link">
+                <a href="{{asset('pages/UI/buttons.html')}}" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Buttons</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/UI/sliders.html" class="nav-link">
+                <a href="{{asset('pages/UI/sliders.html')}}" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Sliders</p>
                 </a>
@@ -540,9 +575,9 @@ to get the desired effect
 <script src="{{asset('admin-lte/plugins/chart.js/Chart.min.js')}}"></script>
 <script src="{{asset('admin-lte/dist/js/demo.js')}}"></script>
 <script src="{{asset('admin-lte/dist/js/pages/dashboard3.js')}}"></script>
-<script>
+
 @yield('javascript')
-</script>
+
 
 </body>
 </html>
