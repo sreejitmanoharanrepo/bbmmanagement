@@ -21,17 +21,19 @@
 
 <ul class="nav nav-pills">
     <li class="nav-item">
-        <a class="nav-link active" href="#opened_cases">Open Cases</a>
+        <a class="nav-link active" data-toggle="tab" href="#opened_cases">Open Cases</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#closed_cases">Closed Cases</a>
-    </li>
-  
-  </ul>
-  <div id="opened_cases">
+        <a class="nav-link" data-toggle="tab" href="#closed_cases">Closed Cases</a>
+    </li>  
+</ul>
+
+  <div class="tab-content">
+  <div id="opened_cases" class="tab-pane active">
 <table id="example" class="hover" style="width:100%">
            <thead class="table_head">
          
+                <th>Dispute Id</th>
                 <th>Item</th>
                 <th>Problem</th>
                 <th>Trading Partner</th>
@@ -45,6 +47,7 @@
                 @foreach($list_cases as $list_case)
                 @if($list_case->DisputeState !="Closed")
                 <tr>
+                <td>{{$list_case->DisputeID}}</td>
                 <td>{{$list_case->ItemID}}</td>
                 <td>{{$list_case->DisputeReason}}</td>
                 <td>{{$list_case->OtherPartyName}}</td>
@@ -68,8 +71,7 @@
     </table>
 </div>
 
-
-<div id="closed_cases">
+<div id="closed_cases" class="tab-pane fade">
 <table id="example1" class="hover" style="width:100%">
            <thead class="table_head">
          
@@ -107,6 +109,7 @@
             </tbody>
         
     </table>
+</div>
 </div>
 </div>
 </div>
