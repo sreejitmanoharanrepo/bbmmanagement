@@ -29,3 +29,6 @@ Route::get('/read/{id}', 'MessageController@read');
 Route::get('/add_listing', 'ListingController@index')->name('add_listing');
 
 
+///////cases link//////
+Route::get('/cases', 'CaseController@index')->name('case');
+

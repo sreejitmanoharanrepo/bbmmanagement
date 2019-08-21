@@ -211,6 +211,23 @@ to get the desired effect
                   <p>Add Listing</p>
                 </a>
               </li>
+              <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fa fa-pie-chart"></i>
+              <p>
+                Orders
+                <i class="right fa fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+            <li class="nav-item">
+                <a href="{{route('case')}}" class="nav-link">
+                  <i class="fal fa-circle-o nav-icon"></i>
+                  <p>Cases</p>
+                </a>
+              </li>
+            </li>
+            </ul>
               <li class="nav-item">
                 <a href="" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
@@ -236,6 +253,7 @@ to get the desired effect
                 </p>
               </a>
              </li>
+             
               <li class="nav-item">
                 <a href="{{route('add_listing')}}" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
