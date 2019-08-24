@@ -18,7 +18,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/test', 'HomeController@test');
+
+
+
+//
+Route::get('/Feedback', 'EbayfeedbackController@index');
 
 ///////messages links//////
 Route::get('/message', 'MessageController@index')->name('message');
